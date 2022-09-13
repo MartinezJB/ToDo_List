@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(39 39 42);
+    margin-top: 5%;
+}
+
+.paddingx-10, .container, body {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container {
+    background-color: rgb(248 250 252);
+    border-radius: 25px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.todo-card {
+    background-color: rgb(52, 65, 83);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border: solid 1px black;
+    padding: 0.5rem;
+}
+
+.todo-card button {
+    width: 10%;
+    height: min-content;
+    background-color: rgb(220 38 38);
+}
+
+.todo-card input {
+    width: 10%;
+    height: min-content;
+}
+
+.todo-card section {
+    width: 80%;
+    color: rgb(249 115 22);
+    text-align: center;
+}
+
+.todo-card section a {
+    text-decoration: none;
+    color: rgb(249 115 22);
+    font-size: large;
+    font-weight: 700;
+}
+
+.todo-card section p {
+    background-color: rgb(100 116 139);
+    color: rgb(250 204 21);
+    overflow: hidden;
+    max-height: 0;
+    transition: all .2s ease-in-out;
+}
+
+section:target p {
+    max-height: 120px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+form {
+    background-color: rgb(30 41 59);
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+form input {
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+form #title {
+    width: 30%;
+    height: 1rem;
+}
+
+form #desc {
+    width: 50%;
+    height: 2rem;
+}
+
+form button {
+    padding: 0.5rem;
+    background-color: rgb(250 204 21);
+    color: rgb(30 41 59);
+}
